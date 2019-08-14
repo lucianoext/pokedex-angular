@@ -1,0 +1,19 @@
+<body>
+<h1><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/250px-International_Pok%C3%A9mon_logo.svg.png"> by lucho</h1>
+
+<ul *ngIf="pokemons">
+  <div>
+    <h2>Choose your Partner!</h2>
+    <input type="text" [(ngModel)]="name"><br>
+  <button (click)="goPokemon()">Go!</button>
+  </div>
+
+  <a>{{pokemon.id}}</a>
+  <a>{{pokemon.name}}</a>
+<div>
+  <p>
+  <img src="{{pokemon.sprites.front_default}}"  >
+  </p>
+</div>
+</ul>
+</body>
